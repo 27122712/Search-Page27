@@ -1,0 +1,43 @@
+/* Reset default margin and padding for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+
+/* Center the table horizontally and vertically */
+table {
+    width: 70%; /* Adjust the width as needed */
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px; /* Adjust vertical positioning as needed */
+}
+tr {
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+/* Style the table header cells */
+th {
+    background-color: black;
+    color: burlywood;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Style the table data cells */
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style alternate rows with background color */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

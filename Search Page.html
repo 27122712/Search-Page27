@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page with Options</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <h1>Search Page with Options</h1>
+    <form id="search-form" method="get">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="q" placeholder="Enter your search query" list="search-options" required >
+        
+        <datalist id="search-options">
+            <option value="Pratap Nagar,Jaipur(302033)">
+            <option value="Badi Chaupad,Jaipur(302002)">
+            <option value="Kukas,Jaipur(302028)">
+            <option value="Malviya Nagar,Jaipur(302017)">
+            <option value="MI Road,Jaipur(302001)">
+            <option value="Jagatpura,Jaipur(303806)">
+            <option value="Mansarovar,Jaipur(302020)">
+        </datalist>
+        
+        <button type="submit">Search</button>
+    </form>
+
+    <script>
+        // JavaScript code to redirect based on the search query
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            const searchInput = document.getElementById("search").value;
+            if (searchInput === "Pratap Nagar,Jaipur(302033)") {
+                // Redirect to the "option1.html" page when "Option 1" is selected
+                window.location.href="PratapNagar.html";
+                event.preventDefault(); // Prevent the form from submitting
+            }
+            if (searchInput === "Badi Chaupad,Jaipur(302002)") {
+                // Redirect to the "option1.html" page when "Option 1" is selected
+                window.location.href = "Badi Chaupad.html";
+                event.preventDefault(); // Prevent the form from submitting
+            }
+            if (searchInput === "Kukas,Jaipur(30028)") {
+                // Redirect to the "option1.html" page when "Option 1" is selected
+                window.location.href = "Kukas.html";
+                event.preventDefault(); // Prevent the form from submitting
+            }
+            if (searchInput === "Malviya Nagar,Jaipur(302017)") {
+                // Redirect to the "option1.html" page when "Option 1" is selected
+                window.location.href = "Malviya Nagar.html";
+                event.preventDefault(); // Prevent the form from submitting
+            }
+            if (searchInput === "MI Road,Jaipur(302001)") {
+                // Redirect to the "option1.html" page when "Option 1" is selected
+                window.location.href = "MI Road.html";
+                event.preventDefault(); // Prevent the form from submitting
+            }
+            if (searchInput === "Jagatpura,Jaipur(303806)") {
+                // Redirect to the "option1.html" page when "Option 1" is selected
+                window.location.href = "Jagatpura.html";
+                event.preventDefault(); // Prevent the form from submitting
+            }
+            if (searchInput === "Mansarovar,Jaipur(302020)") {
+                // Redirect to the "option1.html" page when "Option 1" is selected
+                window.location.href = "Mansarovar.html";
+                event.preventDefault(); // Prevent the form from submitting
+            }
+        });
+    </script>
+</body>
+</html>
+
+
